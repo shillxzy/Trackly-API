@@ -22,6 +22,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 
 class ProfileSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(source='user.username', read_only=True)
     class Meta:
         model = Profile
-        fields = ("fullname", "avatar", "theme", "timezone", "streak_days")
+        fields = ( "username", "fullname", "avatar", "theme", "timezone", "streak_days")

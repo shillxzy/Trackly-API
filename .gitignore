@@ -127,3 +127,4 @@ pnpm-debug.log*
 *.dump
 *.sql
 *.sqlite3
+*trackly_db

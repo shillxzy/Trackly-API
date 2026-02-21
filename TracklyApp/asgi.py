@@ -12,10 +12,8 @@ import os
 from django.core.asgi import get_asgi_application
 
 # для dev
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "TracklyApp.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "TracklyApp.settings.base")
 
-# для prod
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "TracklyApp.settings.production")
 
 
 application = get_asgi_application()
